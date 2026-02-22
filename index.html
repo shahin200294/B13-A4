@@ -1,11 +1,45 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <!-- google font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Geist:wght@100..900&display=swap" rel="stylesheet">
+    <!-- tailwind css -->
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
 </head>
-<body>
-    
+
+<body class="max-w-11/12 mx-auto">
+    <header>
+        <h1 class="font-bold text-[32px] text-[#002C5C] mb-[20px] mt-[60px]">Job Application Tracker</h1>
+        <div class="grid grid-cols-3 gap-1 text-[#F1F2F4] space-y-6">
+            <div>
+                <p class="text-[#323B49] mb-1">total</p>
+                <p id="total-count" class="text-[#002C5C] font-bold">0</p>
+            </div>
+            <div>
+                <p class="text-[#323B49] mb-1">Interview</p>
+                <p id="interview" class="text-[#10B981] font-bold">0</p>
+            </div>
+            <div>
+                <p class="text-[#323B49] mb-1">Rejected</p>
+                <p id="rejected" class="text-[#EF4444] font-bold">0</p>
+            </div>
+        </div>
+        <hr class="text-[#E6E7E9] my-5">
+    </header>
+
+    <main>
+        <div class="flex justify-between">
+            <h2 class="text-[#002C5C] font-semibold text-[20px]">Available Jobs</h2>
+            <p class="font-medium text-[16px] text-[#64748B]">0 Jobs</p>
+        </div>
+    </main>
+
 </body>
+
 </html>
