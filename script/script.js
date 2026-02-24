@@ -68,6 +68,8 @@ mainContainer.addEventListener('click', function (event) {
         const status = parenNode.querySelector('.status').innerText
         const notes = parenNode.querySelector('.notes').innerText
 
+        parenNode.querySelector('.status').innerText= interview
+
         const cardInfo = {
             parentName,
             latinName,
@@ -76,7 +78,6 @@ mainContainer.addEventListener('click', function (event) {
             notes
 
 
-            
         };
 
         const plantExist = interviewList.find(item => item.parentName == cardInfo.parentName);
@@ -86,8 +87,10 @@ mainContainer.addEventListener('click', function (event) {
 
         if (!plantExist) {
             interviewList.push(cardInfo)
-        }
+        };
 
+        calculateCount()
+        
         renderInterview()
     }
 
